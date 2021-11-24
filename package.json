@@ -1,0 +1,46 @@
+{
+  "name": "coin-rates",
+  "version": "1.0.0",
+  "description": "Fetch currency exchange rate for coin/fiat currency pairs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:unit": "./node_modules/.bin/mocha --recursive ./test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samotari/coin-rates-node.git"
+  },
+  "author": {
+    "name": "Samotari",
+    "email": "crypto.samotari@gmail.com",
+    "url": "https://github.com/samotari"
+  },
+  "contributors": [
+    {
+      "name": "Charles Hill",
+      "email": "chill@degreesofzero.com"
+    },
+    {
+      "name": "Carlos Garcia Ortiz",
+      "email": "yo@carlosgarciaortiz.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samotari/coin-rates-node/issues"
+  },
+  "homepage": "https://github.com/samotari/coin-rates-node#readme",
+  "dependencies": {
+    "async": "3.2.2",
+    "underscore": "1.13.1"
+  },
+  "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "9.1.3"
+  }
+}
