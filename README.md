@@ -1,5 +1,7 @@
 # coin-rates
 
+![Build Status](https://github.com/samotari/coin-rates-node/actions/workflows/tests.yml/badge.svg)
+
 Fetch currency exchange rate for a coin/fiat currency pair in nodejs.
 
 * [Installation](#installation)
