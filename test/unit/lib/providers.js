@@ -1,5 +1,5 @@
 const _ = require('underscore');
-const { expect } = require('chai');
+const assert = require('assert');
 
 describe('lib/providers', function() {
 
@@ -21,13 +21,14 @@ describe('lib/providers', function() {
 					},
 				};
 				return coinRates.get(options).then(rate => {
-					expect(rate).to.not.be.null;
-					expect(rate).to.be.a('string');
+					assert.ok(rate);
+					assert.strictEqual(typeof rate, 'string');
 					const asNumber = parseFloat(rate);
-					expect(asNumber).to.be.a('number');
-					expect(asNumber > 0).to.equal(true);
+					assert.strictEqual(typeof asNumber, 'number');
+					assert.ok(!Number.isNaN(asNumber));
+					assert.ok(asNumber > 0);
 					return coinRates.get(options).then(rate2 => {
-						expect(rate2).to.equal(rate);
+						assert.strictEqual(rate2, rate);
 					});
 				});
 			});

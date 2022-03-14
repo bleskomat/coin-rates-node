@@ -36,11 +36,10 @@
   },
   "homepage": "https://github.com/samotari/coin-rates-node#readme",
   "dependencies": {
-    "async": "3.2.2",
-    "underscore": "1.13.1"
+    "async": "3.2.3",
+    "underscore": "1.13.2"
   },
   "devDependencies": {
-    "chai": "4.3.4",
-    "mocha": "9.1.3"
+    "mocha": "9.2.2"
   }
 }
