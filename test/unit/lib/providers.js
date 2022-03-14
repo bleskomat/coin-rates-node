@@ -1,4 +1,3 @@
-const _ = require('underscore');
 const assert = require('assert');
 
 describe('lib/providers', function() {
@@ -9,15 +8,16 @@ describe('lib/providers', function() {
 		'poloniex': 'USD',
 	};
 
-	_.chain(coinRates.providers).pluck('name').each(provider => {
-		describe(provider, function() {
+	Object.entries(coinRates.providers).forEach(function([key, provider], index) {
+		const { name } = provider;
+		describe(name, function() {
 			it('get([options])', function() {
 				this.timeout(5000);
 				let options = {
-					provider,
+					provider: name,
 					currencies: {
 						from: 'BTC',
-						to: toCurrency[provider] || 'EUR',
+						to: toCurrency[name] || 'EUR',
 					},
 				};
 				return coinRates.get(options).then(rate => {
@@ -33,5 +33,6 @@ describe('lib/providers', function() {
 				});
 			});
 		});
+		return false;
 	});
 });
