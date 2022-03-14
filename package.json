@@ -16,15 +16,10 @@
     "url": "git+https://github.com/samotari/coin-rates-node.git"
   },
   "author": {
-    "name": "Samotari",
-    "email": "crypto.samotari@gmail.com",
-    "url": "https://github.com/samotari"
+    "name": "Charles Hill",
+    "email": "chill@degreesofzero.com"
   },
   "contributors": [
-    {
-      "name": "Charles Hill",
-      "email": "chill@degreesofzero.com"
-    },
     {
       "name": "Carlos Garcia Ortiz",
       "email": "yo@carlosgarciaortiz.com"
