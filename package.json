@@ -1,6 +1,6 @@
 {
   "name": "coin-rates",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fetch currency exchange rate for coin/fiat currency pairs",
   "main": "index.js",
   "directories": {
