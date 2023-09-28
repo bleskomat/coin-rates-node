@@ -1,6 +1,6 @@
 # Changelog
 
-* TBD:
+* v1.2.0:
 	* Added: anycoin, ibexmercado, okx
 	* Removed: poloniex
 	* Better handling of case where currency pair not supported
