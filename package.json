@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/bleskomat/coin-rates-node#readme",
   "dependencies": {
-    "async": "3.2.3"
+    "async": "3.2.4"
   },
   "devDependencies": {
-    "mocha": "9.2.2"
+    "mocha": "10.2.0"
   }
 }

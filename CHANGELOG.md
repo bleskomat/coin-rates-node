@@ -4,6 +4,7 @@
 	* Added: anycoin, ibexmercado, okx
 	* Removed: poloniex
 	* Better handling of case where currency pair not supported
+	* Upgraded dependencies
 * v1.1.1:
 	* Updated, removed dependencies
 * v1.1.0:
